@@ -1,7 +1,17 @@
 * {
     box-sizing: border-box;
     text-align: center;
-    
+    animation: all 1.5s ease-out both;
+}
+@keyframes all{
+    from{
+        transform: translateX(500);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 body {
