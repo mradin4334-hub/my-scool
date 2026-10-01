@@ -397,19 +397,33 @@ footer {
         blue
     );
 
-    border:  solid 2px;
-
-    padding: 1px;
-
+    padding: 25px;
     border-radius: 20px;
 
     color: white;
+
+    border: solid 2px white;
 
     box-shadow:
         0 10px 30px rgba(15, 23, 42, 0.06);
 
     transition: 0.3s;
+
+    animation: fit 1.5s ease-out both;
+
+  
 }
+@keyframes fit {
+    from{
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 
 .sub-card div:hover {
     transform: translateY(-7px);
